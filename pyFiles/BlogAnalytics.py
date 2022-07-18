@@ -43,7 +43,6 @@ class BlogAnalytics:
         except Exception as e:
             print("Unable to get url {} due to {}.".format(url, e.__class__))
 
-
     async def getPages(self, urls):
         ret = []
         async with aiohttp.ClientSession() as session:

@@ -1,4 +1,7 @@
 https://blog.eletrogate.com/wp-json/wp/v2/posts?_embed&per_page=8&page=1
 
 ###
-https://blog.eletrogate.com/wp-json/wp/v2/posts?_embed&per_page=8&page=2
+https://blog.eletrogate.com/wp-json/wp/v2/posts?_embed&per_page=8&page=
+
+###
+https://blog.eletrogate.com/wp-json/wp/v2/categories/
