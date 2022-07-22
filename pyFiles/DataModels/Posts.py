@@ -12,7 +12,7 @@ class Posts(Base):
     __tablename__ = 'posts'
     
     id 				= Column(Integer, primary_key=True, autoincrement=True)
-    idWp 			= Column(Integer, nullable=True)
+
     urlPost 		= Column(String(255), nullable=True)
     title 			= Column(String(255), nullable=True)
     description 	= Column(String(255), nullable=True)
@@ -29,23 +29,23 @@ Base.metadata.create_all(engine)
 
 
 if __name__ == '__main__':
+    pass
+    # from sqlalchemy.orm import sessionmaker
     
-    from sqlalchemy.orm import sessionmaker
+    # Session = sessionmaker(bind=engine)
+    # session = Session()
     
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    
-    postTest = Posts()
-    postTest2 = Posts()
+    # postTest = Posts()
+    # postTest2 = Posts()
 
-    postTest.author = 'bagla'
-    postTest2.author = 'bagla2'
+    # postTest.author = 'bagla'
+    # postTest2.author = 'bagla2'
 
-    session.add(postTest)
-    session.add(postTest2)
+    # session.add(postTest)
+    # session.add(postTest2)
 
-    session.commit()
+    # session.commit()
 
-    posts = session.query(Posts).all()
-    for post in posts:
-        print(post.author)
+    # posts = session.query(Posts).all()
+    # for post in posts:
+    #     print(post.author)
